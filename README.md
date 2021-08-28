@@ -1,4 +1,3 @@
-# what-I-cannot-show-you
 <h1>What I Cannot Show You</h1>
  Responsive web based gallery for my <b>What I Cannot Show You</b> film photography set.
 
