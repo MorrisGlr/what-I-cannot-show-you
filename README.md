@@ -23,4 +23,6 @@ I found myself wanting to share my art online, however, the only options availab
         <ul><li>One priority of mine is to eventually make it such that I will make a guide for anyone (anywhere between zero and hero) to host their artwork as a github page with minimal code editing. Stay tuned.</li></ul>
     <li>When will this project be finished?</li>
         <ul><li>¯\_(ツ)_/¯</li></ul>
+    <li>IsN't FiLm PhOtOgRaPhY dEaD? My IpHoNe TaKeS bEtTeR pIcTuRes.</li>
+        <ul><li>ok</li></ul>
  </ul>
