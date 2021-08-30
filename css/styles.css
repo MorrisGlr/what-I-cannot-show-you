@@ -1,0 +1,93 @@
+/* section css */
+#title {
+    background: #000000;
+    
+}
+
+#photo1 {
+    background: #000000;
+}
+
+#photo2 {
+    background: #000000;
+}
+/* --- */
+
+li{
+    margin: 15px 0;
+}
+
+p {
+    color: #bdbdbd
+}
+
+/* text alignment in the right title column */
+p.title {
+    text-align: right;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: white
+}
+
+/* ---navbar--- */
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.bg-dark {
+    opacity: 0.75;
+}
+
+.pad-3-5 {
+    padding: 0% 10%;
+}
+
+/* padding options for container-fluid */
+.pad-5-10 {
+    padding: 7% 10% 5%;
+}
+
+.pad-3-10 {
+    padding: 3% 10%;
+}
+
+.bg-blk-op06 {
+    opacity: 0.6;
+    background-color: #000000;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+/* div styles */
+.bg-grad-right-tint {
+    background-image: linear-gradient(to right, #42424265 , #00000000);
+}
+
+
+/* images */
+.imgstyle{
+	width:100%;
+	height:100%;
+}
+
+/* z-index */
+.zi-abs {
+    position: absolute;
+}
+
+.zi-rel {
+    position: relative;
+}
+
+.zi-0 {
+    z-index: 0;
+}
+
+.zi-1 {
+    z-index: 1;
+}
