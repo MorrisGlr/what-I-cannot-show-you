@@ -1,11 +1,12 @@
 /* section css */
 #title {
     background: #000000;
-    
 }
 
 #photo1 {
     background: #000000;
+    position: absolute;
+    z-index: 1
 }
 
 #photo2 {
@@ -20,11 +21,6 @@ li{
 p {
     color: #bdbdbd;
     font-size: 1.7rem;
-}
-
-/* text alignment in the right title column */
-p.title {
-    text-align: right;
 }
 
 h1 {
@@ -46,22 +42,42 @@ h1 {
     padding: 0% 10%;
 }
 
+/* text styles */
+.text-bottom-right {
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+
 /* padding options for container-fluid */
-.pad-5-10 {
-    padding: 7% 10% 5%;
+.pad-7-13-5 {
+    padding: 7% 13% 5%;
 }
 
 .pad-3-10 {
     padding: 3% 10%;
 }
 
-.pad-3-0 {
-    padding: 3% 0%;
+.pad-5-0 {
+    padding: 3% 0% 3%;
 }
 
 .pad-photo-text {
     padding: 12% 0%
 }
+
+.pad-photo-intro {
+    padding: 3% 0%;
+}
+
+/* alignment/justify */
+.bottom-right {
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+
+/* background colors */
 .bg-blk-op06 {
     opacity: 0.6;
     background-color: #000000;
@@ -76,16 +92,23 @@ h1 {
     background-image: linear-gradient(to right, #42424265 , #00000000);
 }
 
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
 
-/* images */
-.imgstyle{
+/* image styles */
+.img-title{
 	width:100%;
 	height:100%;
+    position:relative;
+    z-index: 0;
 }
 
 .img-photo{
-    width: 75%;
-    height: 75%;
+    width: 67%;
+    height: 67%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -107,3 +130,100 @@ h1 {
 .zi-1 {
     z-index: 1;
 }
+
+/* scroll indicator */
+.indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .arrow {
+    position: relative;
+    top: -40px;
+    width: 10px;
+    height: 82px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .arrow_line {
+    width: 2px;
+    height: 80px;
+    background: white;
+    animation: height 2.5s ease-in infinite;
+  }
+  
+  .arrow_tip-wrapper {
+    position: relative;
+    top: 77px;
+    left: -1px;
+    animation: arrow-tip 2.5s ease-in infinite;
+  }
+  
+  .arrow_tip {
+    width: 2px;
+    height: 6px;
+    background: white;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 2px;
+  }
+  
+  .arrow_tip.left {
+    transform: rotate(-45deg);
+    left: -2px;
+  }
+  
+  @keyframes grow {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1.0);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes height {
+    0% {
+      transform: translateY(-100%);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    60% {
+      transform: translateY(0);
+    }
+    90% {
+      transform: translateY(110%);
+    }
+    100% {
+      transform: translateY(110%);
+    }
+  }
+  
+  @keyframes arrow-tip {
+    0% {
+      transform: translateY(-100%);
+    }
+    50% {
+      transform: translateY(-1px);
+    }
+    85% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
