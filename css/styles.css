@@ -5,7 +5,6 @@
 
 #photo1 {
     background: #000000;
-    position: absolute;
     z-index: 1
 }
 
@@ -92,10 +91,31 @@ h1 {
     background-image: linear-gradient(to right, #42424265 , #00000000);
 }
 
+.photo-end {
+    height: 15rem;
+    width: auto;
+    /* background-image: linear-gradient(to right, #00000065 , #00000000); */
+    background-image: linear-gradient(to top, #000000 , #00000000);
+}
+
 .sticky {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+}
+
+.photo-spacer {
+    height: 100px;
+    width: auto;
+    background-color: #000000;
+    position: relative;
+    z-index: 1;
+}
+
+.test-div {
+    background-color: turquoise;
+    height: 2000px;
+    width: auto;
 }
 
 /* image styles */
@@ -114,6 +134,9 @@ h1 {
     margin-right: auto;
 }
 
+.change-ratio {
+  margin:-22% 0;
+}
 /* z-index */
 .zi-abs {
     position: absolute;
@@ -121,6 +144,14 @@ h1 {
 
 .zi-rel {
     position: relative;
+}
+
+.zi-n1 {
+  z-index: -1;
+}
+
+.zi-0 {
+  z-index: 0;
 }
 
 .zi-0 {
@@ -131,6 +162,17 @@ h1 {
     z-index: 1;
 }
 
+.zi-2 {
+    z-index: 2;
+}
+
+.zi-3 {
+    z-index: 3;
+}
+
+.zi-10 {
+    z-index: 10;
+}
 /* scroll indicator */
 .indicator {
     display: flex;
@@ -227,3 +269,22 @@ h1 {
       opacity: 0;
     }
   }
+
+/* photo scroll animation */
+.scroll-container {
+    z-index: 2;
+  }
+  
+.scroll-img {
+    top: 4rem;
+}
+
+/* photo animation */
+.js-scroll {
+    opacity: 0;
+    transition: opacity 2500ms;
+}
+  
+.js-scroll.scrolled {
+opacity: 1;
+}

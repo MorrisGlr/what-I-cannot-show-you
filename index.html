@@ -31,8 +31,10 @@
             <!--Title-->
             <div>
                 <!-- bkgd image -->
-                <div class="container-fluid zi-abs">
-                    <img class="img-title" src="images/test_pattern.png" alt="Abandoned Shed">
+                <div class="container-fluid zi-abs zi-0">
+                    <figure class="change-ratio">
+                        <img class="img-title" src="images/test_pattern.png" alt="Abandoned Shed">
+                    </figure>
                 </div>
                 <div class="bg-grad-right-tint zi-rel zi-1">
                 <!-- added the extra div to apply the transparent gradient accross full width, not just padded area. -->
@@ -43,6 +45,7 @@
                         <div class="col-lg-6">
                             <div class="bottom-right">
                                 <div>
+                                    <!-- animated down arrow -->
                                     <div class="wrapper">
                                         <div class="arrow">
                                         <div class="arrow_line">
@@ -60,6 +63,8 @@
                         </div>
                     </div>
                 </div>
+                <!-- bkgd break -->
+                <div class="photo-spacer zi-rel zi-3"></div>
             </div>
         </div>
     </section>
@@ -67,9 +72,13 @@
     
 
     <section id='photo1'>
+        <!-- photo spacer -->
+        <div class="photo-spacer zi-abs zi-10"></div>
         <!-- photo -->
-        <div class="container-fluid sticky pad-5-0">
-            <img class="img-photo" src="images/test_pattern.png"></images>
+        <div class="sticky">
+            <div class="container-fluid pad-5-0 js-scroll scroll-img zi-rel">
+                    <img class="img-photo" src="images/test_pattern.png"></images>
+            </div>
         </div>
         <!-- introduce photo -->
         <div class="pad-photo-intro">
@@ -88,9 +97,41 @@
                 <p>Lectus mauris ultrices eros in cursus turpis. Risus ultricies tristique nulla aliquet. Aliquam purus sit amet luctus venenatis. Sit amet purus gravida quis blandit.</p>
             </div>
         </div>
+        <!-- photo end -->
+        <div class="photo-end zi-rel zi-10"></div>
     </section>
 
+    <!-- photo break -->
+    <div class="photo-spacer"></div>
+
     <section id='photo2'>
+        <!-- photo spacer -->
+        <div class="photo-spacer zi-abs zi-10"></div>
+        <!-- photo -->
+        <div class="sticky">
+            <div class="container-fluid pad-5-0 js-scroll scroll-img zi-rel">
+                    <img class="img-photo" src="images/test_pattern.png"></images>
+            </div>
+        </div>
+        <!-- introduce photo -->
+        <div class="pad-photo-intro">
+        </div>
+        <!-- text sections-->
+        <div class="row container-fluid">
+            <!-- 1/3 width col to the right -->
+            <!-- text section 1 -->
+            <div class="col-lg-8 pad-photo-text"></div>
+            <div class="col-lg-4 pad-photo-text">
+                <p>Nisl condimentum id venenatis a condimentum vitae sapien. Sit amet est placerat in egestas erat imperdiet sed euismod.</p>
+            </div>
+            <!-- text section 2 -->
+            <div class="col-lg-8 pad-photo-text"></div>
+            <div class="col-lg-4 pad-photo-text">
+                <p>Lectus mauris ultrices eros in cursus turpis. Risus ultricies tristique nulla aliquet. Aliquam purus sit amet luctus venenatis. Sit amet purus gravida quis blandit.</p>
+            </div>
+        </div>
+        <!-- photo end -->
+        <div class="photo-end zi-rel zi-10"></div>
     </section>
 
     <section id='about'>
@@ -99,7 +140,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
